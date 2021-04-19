@@ -282,9 +282,9 @@ function App() {
                 <Dinheiro />
               </Card.Body>
               <Card.Footer>
-                {`${qntMoedas} - ${moedas.code} valor de venda: ${moedas.ask * qntMoedas} ${moedas.codein}`}
+                {`${parseInt(qntMoedas.trim())} - ${moedas.code} valor de venda: ${moedas.ask * parseInt(qntMoedas.trim())} ${moedas.codein}`}
                 <br />
-                {`${qntMoedas} - ${moedas.code} valor de compra: ${moedas.bid * qntMoedas} ${moedas.codein}`}
+                {`${parseInt(qntMoedas.trim())} - ${moedas.code} valor de compra: ${moedas.bid * parseInt(qntMoedas.trim())} ${moedas.codein}`}
               </Card.Footer>
             </Card>
           </Row>
